@@ -152,4 +152,97 @@ not visible on the web page, but it is useful for search engines or how the page
     Negative values are created using a - in front of the value.    
 
 
+************* Adding new Information here ************************************
+
+-->  To link the external css style sheet we have to link the css files to html and in the href attribute we
+     can place the absolute path or the relative path.
+
+ But we can use both thee ways but giving the relative path is considered as good practice 
+
+ Now we will understand what is relative and absolute path :
+
+ The key difference between them is how they specify the location of the resource
+
+ 1. Absolute path: It is like giving the full address to a place including the street name, city, and country.
+    
+For web resources (like images or CSS files), it's like providing the full web address, including "https://" or "http://," such as "https://www.example.com/images/pic.jpg."
+For local files, it's like giving the entire file path from the very beginning, like starting from the "C:" drive on a Windows computer or the root directory ("/") on a Unix-based system.
+
+2. Relative Path: Relative paths are like giving directions to a place from your current location, like saying, "Go two blocks to the right and then one block up."
+
+They specify the location of a resource based on where your current HTML or CSS file is located.
+For example, if your current HTML file is in the same folder as an image, you can simply say "image.jpg" to refer to it because you're already in the same place. 
+
+
+ Choosing Between Absolute and Relative Paths:
+
+    Use Absolute Paths When:
+        Linking to external resources on the internet.
+        Ensuring an exact, fixed location is always used.
+        Referencing resources from different domains.
+
+    Use Relative Paths When:
+        Working within a project's directory structure.
+        Referencing resources within the same domain.
+        Wanting to create more portable and maintainable code.
+
+  -->    It is advisable to place the link element for linking the css inside the head tag because:
+         The reason is that the <head> section of an HTML document is specifically reserved for metadata, external resources,
+         and references 👀that should be loaded before the content in the <body>👀 CSS stylesheets, 
+         being a critical part of styling your web page, should be included in the <head>
+
+  --> We can use many css files in our html page as needed because this can help us to adapt to various
+       situation in developing the web page  
+
+    Ex: Suppose if we want to implement the dark mode in website so to do that we can use the two css file
+        where the first CSS file will serve as a base design for the website when there will not be any dark
+        mode and the second one will be responsible when we will switch to the dark mode
+
+    !! But if we have used the two css file that is main.css and override.css then in that case  any styles defined in "main.css" 
+    for elements or classes that are also targeted by selectors in "override.css" will be overridden,
+     and the styles from "override.css" will be applied instead. 
+
+
+ --> When someone first visits your website, their browser downloads the HTML of the current page plus the linked CSS
+file. Then when they navigate to another page, their browser only needs to download the HTML of that page; the
+CSS file is cached, so it does not need to be downloaded again. Since browsers cache the external stylesheet, your
+pages load faster.   
+
+
+-->We can also import other css file with the help of "@import" in following way:
+
+ 1. With internal style tag
+<style>
+@import url('/css/styles.css');
+</style>
+
+ 2. With external styleheet
+
+ a. If we want to import the cs file which is in the root directory we can use
+    @import filename.css
+
+ Or if it is in another folder in the root directory then we can use
+   @import folder name/filename.css
+
+ b. Importing external CSS is also possible. A common use case are font files.
+     @import 'https://fonts.googleapis.com/css?family=Lato'  
+
+
+ 3. We can also tell the browser to use a certain css file in a given situation by:
+
+     @import '/print-styles.css' print;
+
+   The above tells that use the print-styles.css file when we are printing the web page
+
+   @import url('landscape.css') screen and (orientation:landscape);
+
+   The above can be used when the orientation of the screen are in landscape mode
+
+--> We can use the inline styles to apply the styling to a specific element but using this is A
+    not good practice because it can cause the issue of maintainability in the code
+
+     <h1 style="color: green; text-decoration: underline;">Hello world!</h1>  
+
+
+
 
