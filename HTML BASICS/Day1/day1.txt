@@ -1,0 +1,198 @@
+
+ H-->Hyper
+
+ T-->Text
+
+ M-->Markup(it means here we will use some annotations or tag to represent the content)
+
+ L-->Language
+
+
+HTML is a type of Markup language(!Not programming language) that uses some annotations or tags to represent content and linked those content together
+
+--> meta tag always go inside the head tag and also the information which is important for developer not for user is 
+    store inside the meta tag
+
+    --> View port is the total width of the screen
+
+
+Tag is a type of keyword that specifies or tell what is the type of content and attribute is a case sensitive
+
+
+-->The heading element used to specify the importance of the content below them so lower the 
+number higher the importance
+
+--> All pages should begin with <!DOCTYPE html>. 
+This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
+
+-->Only use one h1 element per page and place lower importance headings below higher importance headings.
+
+---> All page content elements that should be rendered to the page go inside the body element.
+ However, other important information goes inside the head element.
+
+ ---> The title element determines what browsers show in the title bar or tab for the page.
+
+ --> lang attribute is used to indicate that the language of the web page is english
+
+-->The p element is used to write paragraph in website
+
+ !!!!!!!!!!!!!!!!!!!!!!!!
+ -->HTML5 has some elements that identify different content areas. These elements make
+  your HTML easier to read and help with Search Engine Optimization (SEO) and accessibility.
+
+--> A tag not having closing tag is known as self closing tag
+
+--> You can link to another page with the anchor (a) element
+  Ex: <a href='https://freecodecamp.org'>X</a> would link to freecodecamp.org
+   Here X represent the text must be added because by clicking in that link we will
+   redirected to freecodecamp
+
+   -->To make any text having link just place the anchor tag in between the desired text with desire href
+   --> Target attribute in anchor tag help us to go to a new tag
+   --> target="_blank" it tells that to open the page in another tab
+
+   <section 
+     <h2>Cat Photos</h2>
+      <!-- TODO: Add link to cat photos -->
+      <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+      <a href="https://freecatphotoapp.com">
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+      </a>
+      </section>
+
+     --> When you add a lower rank heading element to the page, 
+         it's implied that you're starting a new subsection 
+
+
+     --> here by using ul we can create list in HTML
+              <ul>
+          <li>milk</li>
+          <li>cheese</li>
+           </ul>
+
+        where li is used to add items in the list
+
+    --> The figure element represents self-contained content and will
+        allow you to associate an image with a caption
+
+        And caption can be added by figcaption tag
+
+     --> The <em> tag is used to define emphasized text. The content inside is typically displayed in italic.
+      A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.          
+
+     --> The strong element is used to indicate that
+      some text is of strong importance or urgent. 
+
+      Use of strong tag:While many browsers will display this text in bold by default,
+       the use of the <strong> element allows assistive
+        technologies (such as screen readers) to identify the emphasized text as having 
+        a higher level of importance, making it useful for accessibility.
+
+     --> Just like editText in android is used to collect information from  
+       user. In the same way  web form to collect information from users in HTML
+
+     The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that
+      the form data should be sent to the path /submit-url.   
+
+
+   ---> The input element allows you several ways to collect data from a web form. Like img elements
+    input elements are self-closing and do not need closing tags.
+
+    There are many kinds of inputs you can create using the 
+    type attribute in the input tag
+
+    In order for a form's data to be accessed by the location specified in the action attribute, you must give 
+    the text field a name attribute and assign it a value to represent the data being submitted. 
+    For example, you could use the following syntax for an email address text field: <input type="text" name="email">.  
+    
+    Placeholder text is used to give people a hint about what kind of information to enter into an input.
+     For example, <input type="text" placeholder="Email address">.
+
+    To prevent a user from submitting your form when required information is missing, you need to add the 
+    required attribute to an input element. There's no need to set a value to the required attribute. 
+    Instead, just add the word required to the input element, making sure there is space between it and other attributes. 
+
+
+    --> Use the button element to create a clickable button. For example, <button>Click Here</button> creates a button with the text Click Here.
+      The default behavior of clicking a form button without any attributes submits the form to the location specified in the form's action attribute.
+
+      However, relying on default behavior may cause confusion. 
+      Add the type attribute with the value submit to the button to make it clear that it is a submit button.
+
+      We can use radio buttons for questions where you want only one answer out of multiple options.
+
+      In HTML, the <label> element is used in conjunction with form elements to provide a text description or 
+      label for an associated form control, such as an input field or a checkbox.
+
+      This association helps users understand what each form field is for and makes it easier to interact
+       with forms, especially for people using screen readers or other assistive technologies
+
+      The id attribute is used to identify specific HTML elements. Each id attribute's value must
+      be unique from all other id values for the entire page 
+
+      The name attribute in radio buttons (or radio input elements) serves two primary purposes:
+             
+             1.Radio buttons are used to create a set of mutually exclusive options, where a user can select
+              only one option from the group. The name attribute is used to group related radio buttons together. 
+              When radio buttons share the same name attribute, they are considered part of the same group, 
+              and the user can select only one option from that group.
+
+             2. When a user selects a radio button within a group and submits a form, the name attribute is used to
+              identify which option the user has chosen. The selected option's name attribute and its associated 
+              value attribute (if specified) are sent to the server as part of the form data. This allows the 
+              server-side script or application to process the user's choice. 
+
+        The value attribute in a radio button (or radio input element) serves a crucial role in the form submission process. 
+        It defines the value that will be sent to the server when the radio button is selected and the form is submitted.
+
+     The main purpose of the value attribute is given as:
+        
+         1.Radio buttons are typically used in groups where the user can choose one option from several. 
+         To distinguish between the different options in the group, each radio button should have a unique value attribute. 
+         When a user selects a particular radio button, the value associated with that radio button is sent
+          to the server as part of the form data.
+
+         2. When the user selects one of the radio buttons and submits the form, the value attribute of the selected
+          radio button is included in the form data. This is essential for processing the form on the server-side. 
+          It allows the server to determine which option the user selected. 
+
+     Like radio buttons, form data for selected checkboxes are name / value attribute pairs. 
+     While the value attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+
+
+   --> In HTML, inline elements are elements that are designed to be used within the flow of text and do 
+      not create a new block-level container for content  
+
+      Inline elements typically do not start on a new line and only take up as much width as necessary.
+       They are used to style or provide additional information about specific parts of the text
+
+
+    --> The fieldset element is used to group related inputs and labels together in a web form. 
+    fieldset elements are block-level elements, meaning that they appear on a new line.  
+
+    The <fieldset> element in HTML is like a special box that helps organize those questions
+     or things to fill in. It's like putting all the questions that are about one topic in a nice box with a label on top. 
+
+     The legend element acts as a caption for the content in the fieldset element. 
+     It gives users context about what they should enter into that part of the form.
+
+   -->There's another way to associate an input element's text with the element itself.
+    You can nest the text within a label element and add a for attribute
+     with the same value as the input element's id attribute.  
+
+  --> In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it. 
+  There's no need to set a value to the checked attribute. Instead, just add the word checked to the input element,
+   making sure there is space between it and other attributes.     
+
+
+   --> In summary, the <footer> element in HTML is used to define footer content at the bottom of a webpage or within specific sections.
+    It is a valuable tool for providing additional context, information, and navigation options to users and enhancing
+     the overall structure and accessibility of a webpage.
+
+
+  --> To create table we must follow the below practice:
+         1.The table heading must be under the "thead" tag
+         2. The actual content of the table must be inside the "tbody" tag
+         3.  The bottom part of the table must be under "tfooter" tag 
+    
+    And generally the heading of the table must be bold and for that we will use th not td

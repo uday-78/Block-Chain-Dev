@@ -1,0 +1,173 @@
+ Selecting the correct colors for your webpage can greatly improve the aesthetic appeal to your readers.
+
+
+
+--> Title element gives extra information about our web page in two ways:
+   
+     👀👀  In the title bar when the page is open
+     👀👀  In the browser tab for the page when you hover on it.
+             Even if that tab is not active, once you hover on the tab, the title text is displayed.
+ 
+ --> To center the element we can use the margin property i.e margin left ,right,top,bottom but to use this property
+     all at once and center the element we can use something called as shorthand property of margin i.each
+
+     1. margin:auto;
+
+     This would set left,right,top,bottom to auto
+
+     2. margin: value in (px/%) auto;
+
+     This would set the desired value to all of them
+
+     3. Suppose we want to set the value of left and right to different value and top and bottom to a different value
+        then we can write:
+
+        margin: a b; 
+
+       where a value is define to left and right and b is define for top and bottom  
+
+ --> In html we can have multiple class to an html element which we can write the class name separated by space
+
+        class="animal dog"
+
+   If you add multiple classes to an HTML element, the styles of the first classes you list may be overridden by later classes.
+
+ -->There are two main color models: 
+       👀 The additive RGB (red, green, blue) model used in electronic devices,
+       👀 And the subtractive CMYK (cyan, magenta, yellow, black) model used in print. 
+
+     👀 The green color keyword is actually a darker shade, and is about halfway between black and the maximum value for green. 
+
+        👀 Secondary colors are the colors you get when you combine primary colors.
+        👀  Tertiary colors are created by combining a primary with a nearby secondary color.
+
+The CSS rgb function accepts values, or arguments, for red, green, and blue, and produces a color:
+
+      rgb(red, green, blue);
+
+    👀And in the above function higher the value we provide larger the intensity and lower the value lower the intensity of color
+
+   👀Each red, green, and blue value is a number from 0 to 255. 0 means that there's 0% of that color, and is black. 255 means that there's 100% of that color. 
+
+   👀  In the additive RGB color model, primary colors are colors that, when combined, create pure white.
+       But for this to happen, each color needs to be at its highest intensity.
+
+
+ --> A color wheel is a circle where similar colors, or hues, are near each other, and different ones are further apart
+  
+      👀Two colors that are opposite from each other on the color wheel are called complementary colors.
+        If two complementary colors are combined, they produce gray. But when they are placed side-by-side,
+         these colors produce strong visual contrast and appear brighter
+
+
+--> Complementary Colors: Red and cyan are complementary colors, which means they are located opposite each other on the color wheel. 
+   Complementary colors create a strong visual contrast when placed side by side
+
+   In color theory, colors can be described in terms of their brightness or intensity. 
+   Bright colors are highly saturated and tend to stand out more than muted or desaturated colors.
+   Red and cyan are both bright colors, so when they are adjacent to each other, the contrast in brightness is pronounced.
+
+   When two highly contrasting colors like red and cyan are used extensively on a website or in a design, 
+   it can be visually overwhelming and distracting to viewers. This can make it difficult
+     for users to focus on the content or the main message of the website.
+
+   As you mentioned, placing text on a complementary-colored background can make it hard to read.
+    For example, if you have red text on a cyan background, the high contrast between the two colors
+  can cause the text to appear to vibrate or make it uncomfortable for the eyes to read.  
+
+
+  To address these issues, designers often use color schemes that balance contrast and readability. 
+  They may use complementary colors sparingly for specific elements to create emphasis or draw attention, 
+  but they typically pair them with more subdued colors for the main content to ensure readability and a visually pleasing user experience.
+
+  In web design and graphic design, it's important to consider the psychological and perceptual impact of 
+  color choices to create a harmonious and effective visual presentation.
+
+  It's better practice to choose one color as the dominant color,
+   and use its complementary color as an accent to bring attention to certain content on the page
+
+
+  --> A very common way to apply color to an element with CSS is with hexadecimal or hex values. 
+      while hex values sound complicated, they're really just another form of RGB values.
+
+Hex color values start with a # character and take six characters from 0-9 and A-F. 
+The first pair of characters represent red, the second pair represent green,
+and the third pair represent blue. For example, #4B5320.
+
+ --> With hex colors, 00 is 0% of that color, and FF is 100%.
+  So #00FF00 translates to 0% red, 100% green, and 0% blue, and is the same as rgb(0, 255, 0). 
+
+ --> The HSL color model, or hue, saturation, and lightness, is another way to represent colors.
+
+The CSS hsl function accepts 3 values: a number from 0 to 360 for hue, a percentage from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness.
+
+If you imagine a color wheel, the hue red is at 0 degrees, green is at 120 degrees, and blue is at 240 degrees.
+
+Saturation is the intensity of a color from 0%, or gray, to 100% for pure color. You must add the percent sign % to the saturation and lightness values.
+
+Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral.
+
+--> but you can also use a color transition, or gradient, on an element.
+
+A gradient is when one color transitions into another. The CSS linear-gradient function lets you control
+ the direction of the transition along a line, and which colors are used.
+
+One thing to remember is that the linear-gradient function actually creates an image element,
+ and is usually paired with the background property which can accept an image as a value.
+
+
+ --> he linear-gradient function is very flexible -- here is the basic syntax :
+   linear-gradient(gradientDirection, color1, color2, ...);
+
+gradientDirection is the direction of the line used for the transition. 
+color1 and color2 are color arguments, which are the colors that will be used in the transition itself.
+ These can be any type of color, including color keywords, hex, rgb, or hsl.
+
+ --> If no gradientDirection argument is provided to the linear-gradient function, 
+ it arranges colors from top to bottom, or along a 180 degree line, by default.
+
+ --> With the CSS opacity property, you can control how opaque or transparent an element is.
+
+ Another way to set the opacity for an element is with the alpha channel. 
+ Similar to the opacity property, the alpha channel controls how transparent or opaque a color is.
+
+ To add an alpha channel to an rgb color, use the rgba function instead.
+
+The rgba function works just like the rgb function, but takes one more number from 0 to 1.0 for the alpha channel:
+
+rgba(redValue, greenValue, blueValue, alpha);
+
+-->  default display property for div elements is block. So when two block elements are next to each other, they stack like actual blocks
+
+--> The border-left shorthand property lets you to set the left border's width, style, and color at the same time.
+     border-left: width style color;
+
+
+-->  The box-shadow property lets you apply one or more shadows around an element. Here is basic syntax:
+
+      box-shadow: offsetX offsetY color;
+
+  Here's how the offsetX and offsetY values work:
+
+    both offsetX and offsetY accept number values in px and other CSS units
+    a positive offsetX value moves the shadow right and a negative value moves it left
+    a positive offsetY value moves the shadow down and a negative value moves it up
+    if you want a value of zero (0) for any or both offsetX and offsetY, you don't need to add a unit. Every browser understands that zero means no change.
+
+  The height and width of the shadow is determined by the height and width of the element it's applied to.
+  You can also use an optional spreadRadius value to spread out the reach of the shadow 
+
+  But if we want to position the shadow on the opposite side we can use the negative values of offsetX and offsetY
+
+  The edegs of the box shadow are sharp because there is an optional blurRadius value for the box-shadow property:
+
+    box-shadow: offsetX offsetY blurRadius color;
+
+If a blurRadius value isn't included, it defaults to 0 and produces sharp edges. The higher the value of blurRadius, the greater the blurring effect is.
+
+But if we want to spread the shadow boc further then we can use the value of spreadRadius Like blurRadius, spreadRadius defaults to 0 if it isn't included.
+
+ --> #3b7E20CC  
+
+   Here the first pair of value indicate the red color, second one indicate the blue color,
+    third one indicate the green one and last indicate the alpha channel value

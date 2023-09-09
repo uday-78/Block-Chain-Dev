@@ -1,0 +1,155 @@
+
+--> The title is one of several elements that provide extra information 
+not visible on the web page, but it is useful for search engines or how the page gets displayed.
+
+ charset set to the value utf-8 to tell the browser how to encode characters for the page
+
+
+ --> To star taking control of the content and appearance we will use the style tag to do that
+
+ --> You can add style to an element by specifying it in the 
+ style element and setting a property for it like this:
+
+          element {
+        property: value;
+        }
+
+   Here if in place of element we directly write the element name then that is 
+   known as type selector     
+
+  --> If we have same elements with the same styling like below:
+
+    h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+
+
+    Then they all can be written in a single line by separating the element name by comma as below
+
+    h1,h2,p{
+        text-align:center
+    }   
+
+--> Need for the creation of the css file separately : Here in the html document we can apply styling to the
+    element under the style tag itself but since there will not be any 1 or 2 styling there will be a lot
+    So it is advisable to create a separate css file for that and then link that css file with the html file
+    by following way:
+
+    <link rel="stylesheet" href="styles.css">
+
+    here "rel" attribute is meant to describe the relationship between the linked resource
+     and the current document (webpage).
+
+     Some commonly used values for rel include:
+
+    "stylesheet": This value tells the browser that the linked resource is a style sheet, which is used to define how the webpage should look.
+
+    "icon": This value is used to link to a small image, often representing a website's favicon (the tiny icon you see in browser tabs).
+
+    "preload": It indicates that the linked resource should be preloaded, which can help improve webpage loading speed.
+
+    "author": This value is used in links to profiles or information about the author of the webpage.
+
+    --> To apply the entire styling for a element use the name of that element followed by curly braces and then
+        write the property
+
+    --> The div element is used mainly for design layout purposes 
+
+    And if we dont't want the div to take the entire width then we can use the width property and the specify the value like below:
+
+     div{
+        width:300px
+     }     
+
+     In CSS comment are added by /* */
+
+
+  --> While giving the styling of the element in css we can give either by px or % but there is a difference between them:
+
+      Percentage (%):
+
+    ——> Percentage units are relative to the parent element's size or the containing element's size.
+
+   ——> When you specify an element's size as a percentage, it means that the size is a portion or
+          fraction of the size of its parent or containing element.
+
+  ——> Percentages are particularly useful for creating responsive layouts because they adapt to changes in screen size and parent element size 
+
+     
+     Pixel (px):
+
+    👁👁 👀👀 Pixel units are fixed units and represent a specific number of screen pixels.
+    👁👁 👀👀 When you specify an element's size in pixels, it will always have the same size regardless of its parent or containing element.
+    👁👁 👀👀 Pixels are commonly used for setting precise dimensions and fine-tuning elements' sizes and positions.  
+
+
+    Key Differences:
+
+     👀👀  % units are relative, while px units are absolute.
+     👀👀  % units are responsive and adapt to changes in the parent or viewport size, making them suitable for responsive design.
+     👀👀  px units provide exact control over element sizes but may not adapt well to different screen sizes and devices.
+     👀👀  In most cases, using % units for layout and responsiveness and px units for fine-grained control is a common practice in CSS.
+
+    Here's a basic guideline:
+
+     👀👀  Use % for layout and sizing when you want elements to adapt to their containers.
+     👀👀  Use px for precise control over dimensions and when you need consistent sizing regardless of the container.
+
+
+ --> A class selector is defined by a name with a dot directly in front of it, like this:
+
+                    .class-name {
+                     styles
+                    }
+
+  --> To add a background image in css follow the below way:
+
+       background-image: url("place url here")
+
+   --> article elements commonly contain multiple elements that have related information
+
+
+   --> Styling the p elements as inline-block and placing them on separate lines in the code creates 
+   an extra space to the right of the first p element, causing the second one to shift to the next line.
+    One way to fix this is to make each p element's width a little less than 50%   
+
+  --> You can add a fallback value for the font-family by adding another font name separated by a comma. 
+  Fallbacks are used in instances where the initial is not found/available    
+
+  The default properties of an hr element will make it appear as a thin light grey line. 
+  You can change the height of the line by specifying a value for the height property.   
+
+
+  --> The default color of a link that has not yet been clicked on is typically blue.
+   The default color of a link that has already been visited from a page is typically purple.         
+
+
+ --> The type selector for anchor tag is "a"
+
+--> A pseudo-class is used to define a special state of an element.
+
+    For example, it can be used to:
+
+     👀👀Style an element when a user mouses over it
+     👀👀Style visited and unvisited links differently
+     👀👀Style an element when it gets focus
+
+
+  --> img elements are "like" inline elements.
+
+  -->To make the inline element to block element we can use the display property and give the value block or inline
+
+
+ -->  The h2 elements have default top and bottom margin space, so you could change the bottom margin of the h2 elements to say 0 or another number.
+
+   There is an easier way, simply add a negative top margin to the img elements to pull them up from their current positions.
+    Negative values are created using a - in front of the value.    
+
+
+

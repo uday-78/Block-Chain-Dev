@@ -1,0 +1,82 @@
+-->The <form> HTML element represents a document section containing
+ interactive controls for submitting information.
+
+ -->The <label> tag in HTML is used to provide a usability improvement 
+ for mouse users i.e, if a user clicks on the text within 
+ the <label> element, it toggles the control
+
+ --> About select tag:
+
+The <select> element is used to create a drop-down list.
+
+The <select> element is most often used in a form, to collect user input.
+
+The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the drop-down list will be submitted).
+
+The id attribute is needed to associate the drop-down list with a label.
+
+The <option> tags inside the <select> element define the available options in the drop-down list.
+
+Tip: Always add the <label> tag for best accessibility practices!
+
+
+--> optgroup element : This element is used to group the similar element in drop down menu
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+--> The smallest container inside a table is a table cell, which is created by a <td> element ('td' stands for 'table data')
+
+ <!-- <tbody>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m</td>
+            <td rowspan="2">5:00 p.m</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Tuesday</td>
+            <td>8:00 a.m</td>
+            <td>11:00 a.m</td>
+            <td rowspan="2">XPath</td>
+        </tr>
+        <tr>
+            <td rowspan="2">11:00 a.m</td>
+            <td rowspan="2">2:00 p.m</td>
+        </tr>
+        <tr>
+            <td rowspan="2">XSL transformation</td>
+        </tr>
+        <tr>
+            <td>2:00 p.m</td>
+            <td>5:00 p.m</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00 a.m</td>
+            <td>12:00 p.m</td>
+            <td>XLS Formatting Objects</td>
+        </tr>
+
+    </tbody> -->
+
+
+    --> To refer a class we will use . and to refer id we will use #
+
+    --> Difference between main tag and body tag
