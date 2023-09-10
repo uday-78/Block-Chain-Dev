@@ -196,3 +196,17 @@ This special string is known as a declaration and ensures the browser tries to m
          3.  The bottom part of the table must be under "tfooter" tag 
     
     And generally the heading of the table must be bold and for that we will use th not td
+
+
+    *************************************** New Information Added ********************************************************
+
+    --> In older versions of HTML (like HTML 4 and earlier), the Document Type Definition (DTD) was used to specify
+        a set of rules and instructions for the web browser to understand how to interpret and display the web page.
+        The DTD defined which tags and attributes were valid and how they should be used.
+
+     --> Search engines and other user agents usually index page content based on heading elements, for example to
+         create a table of contents, so using the correct structure for headings is important  
+
+     -->  <p>I like to write <abbr title="Hypertext Markup Language">HTML</abbr>!</p>
+
+     The moment we hover our mouse on HTML the entire full form will be displayed     
